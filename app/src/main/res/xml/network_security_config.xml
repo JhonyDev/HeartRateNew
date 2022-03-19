@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">http://d2b3-119-160-67-85.ngrok.io</domain>
+        <domain includeSubdomains="true">d2b3-119-160-67-85.ngrok.io</domain>
+    </domain-config>
+</network-security-config>
