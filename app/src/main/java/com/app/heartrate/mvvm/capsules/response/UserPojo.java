@@ -11,22 +11,10 @@ public class UserPojo {
     @SerializedName("email")
     @Expose
     private String email;
-    @SerializedName("bmi")
-    @Expose
-    private Double bmi;
-    @SerializedName("height")
-    @Expose
-    private Double height;
-    @SerializedName("weight")
-    @Expose
-    private Integer weight;
 
-    public UserPojo(String username, String email, Double bmi, Double height, Integer weight) {
+    public UserPojo(String username, String email) {
         this.username = username;
         this.email = email;
-        this.bmi = bmi;
-        this.height = height;
-        this.weight = weight;
     }
 
     public String getUsername() {
@@ -43,29 +31,5 @@ public class UserPojo {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public Double getBmi() {
-        return bmi;
-    }
-
-    public void setBmi(Double bmi) {
-        this.bmi = bmi;
-    }
-
-    public Double getHeight() {
-        return height;
-    }
-
-    public void setHeight(Double height) {
-        this.height = height;
-    }
-
-    public Integer getWeight() {
-        return weight;
-    }
-
-    public void setWeight(Integer weight) {
-        this.weight = weight;
     }
 }
